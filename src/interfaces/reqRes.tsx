@@ -1,0 +1,21 @@
+export interface ReqResponseListado {
+    page:        number;
+    per_page:    number;
+    total:       number;
+    total_pages: number;
+    data:        users[];
+    support:     Support;
+}
+
+export interface users {
+    id:         number;
+    email:      string;
+    first_name: string;
+    last_name:  string;
+    avatar:     string;
+}
+
+export interface Support {
+    url:  string;
+    text: string;
+}
